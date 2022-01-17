@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,400;1,600&family=VT323&display=swap" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Reference</title>
+</head>
+<body>
+    <h1>CSS_Cheatsheet</h1>
+    <h2>Basic selectors</h2>
+      <p>CSS selectors define the elements to which a set of CSS rules apply.</p>
+
+      <table> <!-- Basic selectors Table -->
+          <thead>
+              <th>Name</th>
+              <th class="width-150">Syntax</th>
+              <th>Description</th>
+              <th class="width-150">Example</th>
+          </thead>
+          <tr><!-- Universal selector -->
+              <td>Universal selector</td>
+              <td>
+                  <span class="code"> * </span>
+              </td>
+              <td>Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces.</td>
+              <td>
+                  <span class="code"> * </span>
+              </td>
+          </tr>
+          <tr><!-- Type selector -->
+              <td>Type selector</td>
+              <td>
+                  <span class="code"> elementname </span>
+              </td>
+              <td>Selects all elements that have the given node name.</td>
+              <td>
+                  <span class="code"> h1 </span>
+              </td>
+          </tr>
+          <tr><!-- Class selector -->
+              <td>Class selector</td>
+              <td>
+                  <span class="code"> .classname </span>
+              </td>
+              <td>Selects all elements that have the given class attribute.</td>
+              <td>
+                  <span class="code"> .index </span>
+              </td>
+          </tr>
+          <tr><!-- ID selector -->
+              <td>ID selector</td>
+              <td>
+                  <span class="code"> #idname </span>
+              </td>
+              <td>Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document.</td>
+              <td>
+                  <span class="code"> #demo </span>
+              </td>
+          </tr>
+          <tr><!-- Attribute selector -->
+              <td>Attribute selector</td>
+              <td>
+                  <span class="code"> [attr] [attr=value] [attr~=value] </span>
+              </td>
+              <td>Selects all elements that have the given attribute.</td>
+              <td>
+                  <span class="code"> [autoplay] </span>
+              </td>
+          </tr>
+          
+      </table>
+
+    <h2>Combinators</h2>
+      <p>CSS combinators explain the relationship between two selectors. A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator:</p>
+
+      <table> <!-- Combinators Table -->
+          <thead>
+              <th>Name</th>
+              <th class="width-150">Syntax</th>
+              <th>Description</th>
+              <th class="width-150">Example</th>
+          </thead>
+          <tr><!-- Descendant combinator -->
+              <td>Descendant combinator</td>
+              <td>
+                  <span class="code"> A B </span>
+              </td>
+              <td>The (space) combinator selects nodes that are descendants of the first element.</td>
+              <td>
+                  <span class="code"> article p </span>
+              </td>
+          </tr>
+          <tr><!-- Child combinator -->
+              <td>Child combinator</td>
+              <td>
+                  <span class="code"> A > B </span>
+              </td>
+              <td>The > combinator selects nodes that are direct children of the first element.</td>
+              <td>
+                  <span class="code"> ul > li </span>
+              </td>
+          </tr>
+          <tr><!-- General sibling combinator -->
+              <td>General sibling combinator</td>
+              <td>
+                  <span class="code"> A ~ B </span>
+              </td>
+              <td>The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent.</td>
+              <td>
+                  <span class="code"> p ~ span </span>
+              </td>
+          </tr>
+          <tr><!-- Adjacent sibling combinator -->
+              <td>Adjacent sibling combinator</td>
+              <td>
+                  <span class="code"> A + B </span>
+              </td>
+              <td>The + combinator matches the second element only if it immediately follows the first element.</td>
+              <td>
+                  <span class="code"> h2 + p </span>
+              </td>
+          </tr>
+          <tr><!-- Column combinator -->
+              <td>Column combinator</td>
+              <td>
+                  <span class="code"> A || B </span>
+              </td>
+              <td>The || combinator selects nodes which belong to a column.</td>
+              <td>
+                  <span class="code"> col || td </span>
+              </td>
+          </tr>
+      </table>
+    
+</body>
+</html>
